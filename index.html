@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lei de Ohm</title>
+</head>
+<body class="fundo">
+
+   <div class="corpoFooter">
+        <footer class="footer">
+                <h1>Lei de Ohm</h1>
+                <div class="ativarMode">
+                    <div onclick="AtivarModo()" class="darkMode"></div>
+                    <div onclick="ApagandoBonco()" class="dayMode"></div>
+                </div>
+        </footer>
+    </div> 
+
+        <!-- ==============================================  1  =========================== -->
+            <section class="container corFundo1">
+
+                <div class="questaoCSS">
+                   <label class="simbolo-I">I</label>
+                    <input  type="number" id="corrente1" placeholder="Corrente">
+                    <label class="vezes">×</label> 
+                   <label class="simbolo-R">R</label>
+                    <input type="number" id="resistencia1" placeholder="Resistência"> 
+                </div>
+
+                <div class="resultadoCSS"> 
+                    <div onclick="LimparCampo1()" class="desfazer-1"></div>
+                    <div class="caixa-resultado">
+                        <h3 class="F1" id="resultadoIRV">V</h3>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container-botao">
+                <a class="button corFundo1" onclick="IRV()">Calcular</a>
+            </div>
+            
+
+
+
+        <!-- ===============================================  2  =========================== -->
+            <section class="container corFundo2">
+
+                <div class="questaoCSS">
+                    <label class="simbolo-V">V</label>
+                    <input  type="number" id="tensao2" placeholder="Tensão"> 
+                    <label class="vezes">÷</label> 
+                   <label class="simbolo-R2">R</label>
+                    <input  type="number" id="resistencia2" placeholder="Resistência"> 
+                </div>
+
+                <div class="resultadoCSS"> 
+                        <div onclick="LimparCampo2()" class="desfazer-2"></div>
+                        <div class="caixa-resultado">
+                            <h3 class="F2" id="resultadoVRI">I</h3>
+                        </div>
+                </div>
+
+
+            </section>
+
+            <div class="container-botao">
+                <a class="button corFundo2" onclick="VRI()">Calcular</a>
+            </div>
+
+
+
+        <!-- =================================================  3 ========================= -->
+            <section class="container corFundo3">
+
+                <div class="questaoCSS">
+                    <label class="simbolo-V2">V</label>
+                    <input  type="number" id="tensao3" placeholder="Tensão"> 
+                    <label class="vezes">÷</label>
+                   <label class="simbolo-I2">I</label>
+                    <input  type="number" id="corrente3" placeholder="Corrente">
+                </div>
+            
+                <div class="resultadoCSS"> 
+                    <div onclick="LimparCampo3()" class="desfazer-3"></div>
+                    <div class="caixa-resultado">
+                        <h3 class="F3" id="resultadoVIR">R</h3>
+                    </div>
+                   
+                </div>
+            </section>
+            
+            <div class="container-botao">
+                <a class="button corFundo3" onclick="VIR()">Calcular</a>
+            </div>
+
+   
+        <p class="dev">Desenvolvedor: <a class="Icon" href="https://www.douglasdeveloper.com/">Douglas Mateus Teixeira</a></p>
+    
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

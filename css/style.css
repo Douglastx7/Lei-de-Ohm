@@ -1,0 +1,374 @@
+/* ==============================formatação */
+body, h1,h2,h3,h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 { 
+    color: #be9714;
+    text-align: center;
+    margin: 7px;
+}
+
+/* ==========================FOOTER */
+
+.corpoFooter { 
+    width: 300px;
+    margin: 0 auto;
+}
+
+.footer{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+/* =============================================================DarkMode */
+
+.darkMode { 
+    background-image: url('/img/lua-crescente.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.dayMode{
+    display: none;
+    background-image: url('/img/energia-solar.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.ativarDay { 
+    display: block;
+}
+.desativarDark { 
+    display: none;
+}
+
+.fundo { 
+    transition: 0.7s;
+}
+.CorFundo { 
+    background-color: black;
+    transition: 0.7s;
+}
+
+/* ============================== container */
+.container { 
+    width: 300px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+}
+
+
+.questaoCSS { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.corFundo1 {
+    background-color: #E85F08;
+}
+.corFundo2 {
+    background-color: #1A7EAC;
+}
+.corFundo3 {
+    background-color: #FFED06;
+}
+
+
+
+/* ============================== Entrada */
+
+input { 
+    width: 85px;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.simbolo-I { 
+    position: absolute;
+    font-size: 20px;
+    top: 3px;
+    left: -17px;
+}
+
+.simbolo-R { 
+    position: absolute;
+    font-size: 20px;
+    bottom: 3px;
+    left: -20px;
+}
+
+.simbolo-V { 
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: -20px;
+}
+
+.simbolo-R2 { 
+    position: absolute;
+    font-size: 20px;
+    bottom: 4px;
+    left: -20px;
+}
+
+.simbolo-V2 { 
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: -20px;
+}
+
+.simbolo-I2 { 
+    position: absolute;
+    font-size: 20px;
+    bottom: 4px;
+    left: -17px;
+}
+
+/* ------------------BACKGROUND DO INPUT */
+
+#corrente1::placeholder, #corrente3::placeholder { 
+    color: rgb(209, 209, 209);
+}
+
+#corrente1, #corrente3{ 
+    background-color: #1A7EAC;
+}
+
+#resistencia1, #resistencia2 { 
+    background-color: #FFED06;
+}
+
+#tensao2, #tensao3 {
+    background-color: #E85F08;
+}
+
+#tensao2::placeholder, #tensao3::placeholder { 
+    color: rgb(209, 209, 209);
+}
+
+
+/* ============================== Botao */
+
+.container-botao { 
+  display: flex;
+  justify-content: center;
+}
+.button { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    color: #000000;
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 20PX;
+    border-radius: 0px 0 10px 10px;
+    transition: 0.3s;
+}
+
+.button:hover { 
+    box-shadow: black 0px 1px 7px 1px;
+     color: white;
+}
+
+/* =============================== Desfazer-limpar campos */
+
+
+
+.resultadoCSS { 
+    position: relative;
+}
+
+.desfazer-1 { 
+    background-image: url('/img/icon-desfazer.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    top: -40px;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.desfazer-2 { 
+    background-image: url('/img/icon-desfazer.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    top: -40px;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.desfazer-3 { 
+    background-image: url('/img/icon-desfazer.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    top: -40px;
+    left: 100px;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+
+
+/* ============================== SIMBOLOS */
+
+
+.vezes { 
+    color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.vezes::after { 
+    content: '=';
+    width: 30px;
+    height: 30px;
+    bottom: 60px;
+    left: 107px;
+    position: absolute;
+}
+
+/* ============================== RESULTADO DOS CALCULOS */
+
+
+.caixa-resultado { 
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+#resultadoIRV::after { 
+    content: 'V(Volts)';
+    width: 30px;
+    height: 30px;
+    bottom: -35px;
+    left: 25px;
+    font-size: 15px;
+    color: rgb(124, 115, 115);
+    position: absolute;
+}
+
+#resultadoVRI::after { 
+    content: 'A(Ampéres)';
+    width: 30px;
+    height: 30px;
+    bottom: -35px;
+    left: 15px;
+    font-size: 15px;
+    color: rgb(65, 64, 64);
+    position: absolute;
+}
+
+#resultadoVIR::after { 
+    content: 'Ω(Ohm)';
+    width: 30px;
+    height: 30px;
+    bottom: -35px;
+    left: 25px;
+    font-size: 15px;
+    color: rgb(124, 115, 115);
+    position: absolute;
+}
+
+
+.F1 { 
+    color: #E85F08;
+}
+.F2 { 
+    color: #1A7EAC;
+}
+.F3 { 
+    color: #ada30f;
+}
+
+/* ============================== EU  O DESENVOLVEDOR  */
+
+
+.dev { 
+    color: rgb(110, 110, 110);
+    text-align: center;
+    font-size: 15px;
+}
+
+.dev a { 
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+    position: relative;
+    transition: 0.8s;
+    padding: 2px;
+    margin-bottom: 7px;
+}
+
+
+
+.dev a::after { 
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0px;
+    bottom: 0;  
+    background-color: #be9714;
+    position: absolute;
+}
+
+
+.dev a:hover { 
+     color: #be9714;
+    transition: 0.4s;
+}
+
+.Icon:before { 
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    right: -20px;
+    bottom: -3px;
+    border-radius: 10px;
+    background-image: url(/img/icon-portfolio-ouro.png);
+    background-size: 100%;
+    position: absolute;
+}
+
+
+
+
