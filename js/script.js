@@ -10,6 +10,22 @@ const AtivarModo = () => {
       
 }
 
+// ============= ATIVAR MENU 
+const AbrirMenu = () => { 
+      
+      const abrir = document.querySelector('.listaMenu')
+      abrir.classList.add('ativarListaMenu')
+     
+}
+
+const FecharMenu = () => { 
+
+      const fechar = document.querySelector('.listaMenu')
+      fechar.classList.remove('ativarListaMenu')
+}
+
+
+
 // ================== BANCO DE DADOS LOCAL STORAGE
 
 const AtualizarBanco = () => { 
